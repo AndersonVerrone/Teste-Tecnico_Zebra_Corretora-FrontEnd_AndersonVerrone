@@ -1,0 +1,19 @@
+@import "../../styles/globalStyles.scss";
+
+.formContainer {
+    width: 100%;
+    max-width: 21.875rem;
+    padding: 2rem 2rem;
+    border: .0625rem solid $color-border;
+    border-radius: 1.5625rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    > h2 {
+      font-size: 1rem;  
+      font-weight: 500;
+      color: $color-black-opacity;
+    }
+}

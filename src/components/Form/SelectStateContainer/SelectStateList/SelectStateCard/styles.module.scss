@@ -1,0 +1,15 @@
+@import "../../../../../styles/globalStyles.scss";
+
+.stateCard {
+    padding-block: 0.5rem;
+    padding-left: 0.8rem;
+    background: transparent;
+    border-radius: .625rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+        background: $color-orange;
+        color: $color-white;
+    }
+}

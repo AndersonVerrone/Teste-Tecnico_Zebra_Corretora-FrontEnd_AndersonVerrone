@@ -1,0 +1,8 @@
+@import "./reset.scss";
+@import "./globalStyles.scss";
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: $color-white;
+    color: $color-black;
+}

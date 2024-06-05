@@ -1,0 +1,60 @@
+@import "../../styles/globalStyles.scss";
+
+.templateContainer {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  &::before {
+    top: 0;
+    left: $thickness-sidebar;
+    width: calc(100% - $thickness-sidebar * 2);
+    height: $thickness-sidebar;
+    background-color: $color-green;
+  }
+
+  &::after {
+    bottom: 0;
+    left: 0;
+    width: calc(100% - $thickness-sidebar);
+    height: $thickness-sidebar;
+    background-color: $color-yellow;
+  }
+
+  > div {
+    width: 100%;
+    min-height: 100vh;
+    padding: $thickness-sidebar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+    }
+
+    &::before {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: $thickness-sidebar;
+      background-color: $color-red;
+    }
+
+    &::after {
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: $thickness-sidebar;
+      background-color: $color-blue;
+    }
+  }
+}
