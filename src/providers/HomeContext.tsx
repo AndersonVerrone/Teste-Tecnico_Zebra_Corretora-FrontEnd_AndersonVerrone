@@ -13,7 +13,7 @@ interface IHomeContext {
   handleInputChange: (event: ChangeEvent<HTMLInputElement>) => void;
   inputStateValue: string;
   listIsOpen: boolean;
-  selectState: (name: string) => void
+  selectState: (name: string) => void;
 }
 
 interface IHomeProviderProps {
@@ -83,14 +83,20 @@ export const HomeProvider = ({ children }: IHomeProviderProps) => {
     return filterList;
   };
 
-  const selectState = (name:string) => {
-    setInputStateValue(name)
-    setListIsOpen(false)
-  }
+  const selectState = (name: string) => {
+    setInputStateValue(name);
+    setListIsOpen(false);
+  };
 
   return (
     <HomeContext.Provider
-      value={{ statesList, handleInputChange, inputStateValue, listIsOpen, selectState }}
+      value={{
+        statesList,
+        handleInputChange,
+        inputStateValue,
+        listIsOpen,
+        selectState,
+      }}
     >
       {children}
     </HomeContext.Provider>
