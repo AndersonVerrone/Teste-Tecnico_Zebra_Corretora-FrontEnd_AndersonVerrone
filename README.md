@@ -1,30 +1,59 @@
-# React + TypeScript + Vite
+# Sistema de Lembretes - Teste Técnico Zebra Contabilidade
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao repositório do registro utilizando uma API que consome dados de outra API( https://servicodados.ibge.gov.br/api/docs/localidades#api-UFs-estadosGet ), desenvolvido como parte do teste técnico para a Zebra Corretora. Este projeto consiste em um site desenvolvido com React, TypeScript e SASS, e uma API backend em express. Abaixo, você encontrará instruções detalhadas sobre como configurar e utilizar o projeto.
 
-Currently, two official plugins are available:
+## Visão Geral
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O Sistema que os usuários inciram a cidade e é realizado a sugestão para completar. A interface é simples e intuitiva, e as funcionalidades.
 
-## Expanding the ESLint configuration
+## Link para o Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Você pode acessar o site do projeto através do seguinte link: [Sistema do teste técnico](https://front-end-mu-nine.vercel.app)
 
-- Configure the top-level `parserOptions` property like this:
+## Requisitos
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Git para poder clonar o back-end e rodar o servidor
+- node
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Instruções para Configuração do Backend
+
+1. Clone o repositório do backend:
+
+   ```bash
+   git clone https://github.com/AndersonVerrone/Teste-Tecnico_Zebra_Corretora-BackEnd-API_AndersonVerrone.git
+   cd Teste-Tecnico_Zebra_Corretora-BackEnd-API_AndersonVerrone
+   npm instal
+   npm run dev
+   ```
+
+2. Instale as dependencias do projeto:
+
+   ```bash
+   npm install
+   ```
+
+3. Agora inicialize a API:
+
+   ```bash
+   npm run dev
+   ```
+## Estrutura do Projeto
+
+### Frontend
+
+- **React com TypeScript**: Utilizado para criar uma interface de usuário moderna e escalável.
+- **SASS**: Utilizado para estilização com suporte a variáveis, mixins e aninhamento de regras CSS.
+
+### Backend
+
+- **Express**: É uma escolha confiável para agilizar o desenvolvimento web, mantendo alta performance e qualidade nas aplicações!
+
+
+## Decisões de Projeto
+
+- **React e TypeScript**: Escolhidos para garantir um desenvolvimento mais seguro e com menos bugs devido à tipagem estática.
+
+## Contato
+
+Se você tiver qualquer dúvida ou sugestão, sinta-se à vontade para entrar em contato através do email [doverrone@gmail.com](mailto:doverrone@gmail.com).
+
