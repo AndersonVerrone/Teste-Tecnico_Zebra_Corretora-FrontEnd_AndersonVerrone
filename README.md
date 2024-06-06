@@ -22,8 +22,6 @@ Você pode acessar o site do projeto através do seguinte link: [Sistema do test
    ```bash
    git clone https://github.com/AndersonVerrone/Teste-Tecnico_Zebra_Corretora-BackEnd-API_AndersonVerrone.git
    cd Teste-Tecnico_Zebra_Corretora-BackEnd-API_AndersonVerrone
-   npm instal
-   npm run dev
    ```
 
 2. Instale as dependencias do projeto:
